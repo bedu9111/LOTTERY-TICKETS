@@ -1,0 +1,43 @@
+.result-banner {
+  text-align: center;
+  margin: 18px auto 0;
+  padding: 14px 22px;
+  border-radius: 10px;
+  max-width: 340px;
+  font-family: "Space Mono", monospace;
+}
+
+.result-banner--idle {
+  color: #d8c7a8;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.result-banner__sum {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.result-banner__verdict {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.result-banner--win {
+  background: rgba(46, 125, 91, 0.18);
+  border: 1px solid var(--win-bright);
+}
+.result-banner--win .result-banner__verdict {
+  color: var(--win-bright);
+}
+
+.result-banner--lose {
+  background: rgba(139, 58, 58, 0.18);
+  border: 1px solid var(--lose-bright);
+}
+.result-banner--lose .result-banner__verdict {
+  color: var(--lose-bright);
+}

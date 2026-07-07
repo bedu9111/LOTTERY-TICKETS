@@ -1,0 +1,8 @@
+.ticket-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}

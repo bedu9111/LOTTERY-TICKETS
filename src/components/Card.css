@@ -1,0 +1,77 @@
+.card {
+  position: relative;
+  background: linear-gradient(180deg, var(--parchment) 0%, var(--parchment-dim) 100%);
+  color: var(--ink);
+  border-radius: 10px;
+  width: 140px;
+  padding: 18px 0 22px;
+  text-align: center;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.25), 0 12px 24px rgba(0, 0, 0, 0.35);
+  border: 2px solid var(--gold);
+  animation: drop-in 0.4s ease;
+}
+
+.card__label {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--wine);
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+.card__digit {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1;
+  color: var(--wine);
+}
+
+.card--spinning .card__digit {
+  color: var(--gold);
+  animation: wobble 0.25s linear infinite;
+}
+
+.card__perforation {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 8px;
+  border-bottom: 2px dashed rgba(59, 15, 15, 0.35);
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateY(-18px) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 100px;
+    padding: 14px 0 18px;
+  }
+  .card__digit {
+    font-size: 34px;
+  }
+}
