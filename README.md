@@ -53,3 +53,6 @@ npm run preview
   draw, a spinning random digit while revealing, and the final digit once
   settled.
 - `ResultBanner.jsx` shows the sum and a WIN/LOSE message once a draw finishes.
+
+
+## Live Link: https://lottery-tickets.vercel.app/
